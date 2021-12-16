@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'DM Serif Display';
+    font-family: 15px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+.humanise{
+    background-color: hsl(256, 26%, 20%);
+    color: white;
+    .family{
+        max-width: 100%;
+        
+    }
+
+    .insurance{
+        text-align: center;
+        margin-top: 40px;
+    }
+    p{
+        padding: 20px;
+    }
+    
+    .btn{
+        padding: 10px 20px;
+        background-color: hsl(256, 26%, 20%);
+        color: white;
+        border: white solid 1px;
+        margin-bottom: 20px;
+    } 
+}
+.different{
+    text-align: center;
+    margin: 30px;
+
+    .snappy{
+        margin: 20px;
+
+        p{
+            padding: 10px 0;
+        }
+        h4{
+            padding: 15px 0;
+        }
+    }
+}
+.work{
+    text-align: center;
+    background-color: hsl(256, 26%, 20%);
+    padding: 30px 0;
+    color: white;
+
+    .wework{
+        margin: 20px;
+        padding: 10px 20px;
+        background-color: hsl(256, 26%, 20%);
+        border: 1px solid white;
+        color: white;
+    }
+}
+.logo{
+    margin-top: 80px;
+    background-color: hsl(0, 0%, 98%);
+    text-align: center;
+    padding-bottom: 30px;
+    
+
+    .logo1{
+        margin-top: 50px;
+    }
+
+    .icon{
+        padding: 20px 10px;
+    }
+
+    h5{
+        margin: 20px;
+    }
+    h6{
+        margin: 5px;
+        
+    }
+}

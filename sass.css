@@ -6,8 +6,8 @@
 }
 
 body {
-  font-family: 'DM Serif Display';
-  font-family: 15px;
+  font-family: 'Karla';
+  font-size: 25px;
 }
 
 header {
@@ -21,13 +21,13 @@ header {
   padding: 0 20px;
 }
 
+header .flex {
+  display: none;
+}
+
 .humanise {
   background-color: #2d2640;
   color: white;
-}
-
-.humanise .family {
-  max-width: 100%;
 }
 
 .humanise .insurance {
@@ -49,7 +49,8 @@ header {
 
 .different {
   text-align: center;
-  margin: 30px;
+  margin: 50px 0;
+  padding: 50px 0;
 }
 
 .different .snappy {
@@ -58,10 +59,12 @@ header {
 
 .different .snappy p {
   padding: 10px 0;
+  color: #95a9c6;
 }
 
 .different .snappy h4 {
   padding: 15px 0;
+  color: #2d2640;
 }
 
 .work {
@@ -81,9 +84,9 @@ header {
 
 .logo {
   margin-top: 80px;
-  background-color: #fafafa;
   text-align: center;
   padding-bottom: 30px;
+  background-color: rgba(236, 232, 248, 0.678);
 }
 
 .logo .logo1 {
@@ -96,9 +99,134 @@ header {
 
 .logo h5 {
   margin: 20px;
+  color: #95a9c6;
 }
 
 .logo h6 {
   margin: 5px;
+  color: #2d2640;
+}
+
+@media only screen and (min-width: 1000px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px 70px;
+  }
+  header .things {
+    padding: 10px 20px;
+  }
+  header .btn1 {
+    padding: 10px 20px;
+    background-color: white;
+    border: black solid 1px;
+  }
+  header .hamburger {
+    display: none;
+  }
+  header .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-right: 100px;
+  }
+  .humanise {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 28px;
+    padding-left: 30px;
+  }
+  .humanise p {
+    padding: 30px 50px;
+  }
+  .humanise .insurance {
+    padding: 0 60px;
+    text-align: left;
+  }
+  .different {
+    text-align: left;
+    padding: 50px 100px;
+  }
+  .different h4 {
+    font-size: 25px;
+  }
+  .different h2 {
+    font-size: 50px;
+    margin: 50px 0;
+  }
+  .different .prices {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .work {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 50px 100px;
+    margin: 50px;
+    text-align: left;
+  }
+  .work h2 {
+    font-size: 50px;
+  }
+  .logo {
+    background-color: rgba(236, 232, 248, 0.678);
+  }
+  .logo .log {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 10px 100px;
+    border-bottom: rgba(236, 232, 248, 0.678) solid;
+  }
+  .logo .logo1 {
+    padding-left: 50px;
+  }
+  .logo .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto auto auto;
+        grid-template-columns: auto auto auto auto;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    padding-right: 200px;
+    text-align: left;
+  }
+  .logo h6 {
+    padding: 10px 140px;
+    width: 150%;
+  }
+  .logo h5 {
+    padding: 30px 125px;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=sass.css.map */

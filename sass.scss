@@ -1,91 +1,202 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    font-family: 'DM Serif Display';
-    font-family: 15px;
+body {
+  font-family: 'Karla';
+  font-size: 25px;
 }
-header{
-    display: flex;
-    justify-content: space-between;
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 0 20px;
+
+  .flex {
+    display: none;
+  }
+}
+.humanise {
+  background-color: hsl(256, 26%, 20%);
+  color: white;
+  .family {
+    // max-width: 100%;
+  }
+
+  .insurance {
+    text-align: center;
+    margin-top: 40px;
+  }
+  p {
+    padding: 20px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    background-color: hsl(256, 26%, 20%);
+    color: white;
+    border: white solid 1px;
     margin-bottom: 20px;
-    padding: 0 20px;
+  }
 }
-.humanise{
+.different {
+  text-align: center;
+  margin: 50px 0;
+  padding: 50px 0;
+  // background-color: hsla(256, 52%, 94%, 0.678);
+
+  .snappy {
+    margin: 20px;
+
+    p {
+      padding: 10px 0;
+      color: hsl(216, 30%, 68%);
+    }
+    h4 {
+      padding: 15px 0;
+      color: hsl(256, 26%, 20%);
+    }
+  }
+}
+.work {
+  text-align: center;
+  background-color: hsl(256, 26%, 20%);
+  padding: 30px 0;
+  color: white;
+
+  .wework {
+    margin: 20px;
+    padding: 10px 20px;
     background-color: hsl(256, 26%, 20%);
+    border: 1px solid white;
     color: white;
-    .family{
-        max-width: 100%;
-        
+  }
+}
+.logo {
+  margin-top: 80px;
+  text-align: center;
+  padding-bottom: 30px;
+  background-color:  hsla(256, 52%, 94%, 0.678);
+
+  .logo1 {
+    margin-top: 50px;
+  }
+
+  .icon {
+    padding: 20px 10px;
+  }
+
+  h5 {
+    margin: 20px;
+    color: hsl(216, 30%, 68%);
+  }
+  h6 {
+    margin: 5px;
+    color: hsl(256, 26%, 20%);
+  }
+}
+@media only screen and (min-width: 1000px) {
+  header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 70px;
+
+    .things{
+        padding: 10px 20px;
+    }
+    .btn1{
+        padding: 10px 20px;
+    background-color: white;
+    border: black solid 1px;
     }
 
-    .insurance{
-        text-align: center;
-        margin-top: 40px;
+    .hamburger {
+      display: none;
     }
+    .flex {
+      display: flex;
+      justify-content: space-between;
+      margin-right: 100px;
+    }
+  }
+ .humanise{
+     display: flex;
+     flex-direction: row-reverse;
+     align-items: center;
+     font-size: 28px;
+     padding-left: 30px;
+     
     p{
-        padding: 20px;
+       padding: 30px 50px;
     }
+    // .family{
+    //   width: 89%;
+    // }
+     .insurance{
+         padding: 0 60px;
+         text-align: left;
+     }
+ }
+
+ .different{
+    text-align: left;
+    padding: 50px 100px;
     
-    .btn{
-        padding: 10px 20px;
-        background-color: hsl(256, 26%, 20%);
-        color: white;
-        border: white solid 1px;
-        margin-bottom: 20px;
-    } 
-}
-.different{
-    text-align: center;
-    margin: 30px;
-
-    .snappy{
-        margin: 20px;
-
-        p{
-            padding: 10px 0;
-        }
-        h4{
-            padding: 15px 0;
-        }
+    h4{
+      font-size: 25px;
     }
-}
-.work{
-    text-align: center;
-    background-color: hsl(256, 26%, 20%);
-    padding: 30px 0;
-    color: white;
-
-    .wework{
-        margin: 20px;
-        padding: 10px 20px;
-        background-color: hsl(256, 26%, 20%);
-        border: 1px solid white;
-        color: white;
-    }
-}
-.logo{
-    margin-top: 80px;
-    background-color: hsl(0, 0%, 98%);
-    text-align: center;
-    padding-bottom: 30px;
-    
-
-    .logo1{
-        margin-top: 50px;
+    h2{
+      font-size: 50px;
+      margin: 50px 0;
     }
 
-    .icon{
-        padding: 20px 10px;
+    .prices{
+      display: flex;
     }
+ }
 
-    h5{
-        margin: 20px;
-    }
-    h6{
-        margin: 5px;
-        
-    }
+ .work{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 50px 100px;
+   margin: 50px;
+   text-align: left;
+
+  h2{
+    font-size: 50px;
+  }
+ }
+ .logo{
+   background-color:  hsla(256, 52%, 94%, 0.678);
+   .log{
+     display: flex;
+     justify-content: space-between;
+     padding: 10px 100px;
+     border-bottom: hsla(256, 52%, 94%, 0.678) solid;
+   }
+   
+   .logo1{
+     padding-left: 50px;
+   }
+   .grid{
+     display: grid;
+     grid-template-columns: auto auto auto auto;
+     grid-template-rows: auto;
+     padding-right: 200px;
+     text-align: left;
+   }
+   h6{
+     padding: 10px 140px;
+     width: 150%;
+   }
+   h5{
+     padding: 30px 125px;
+     width: 100%;
+     
+   }
+ }
+
 }

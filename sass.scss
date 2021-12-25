@@ -21,7 +21,7 @@ header {
   background-color: hsl(256, 26%, 20%);
   color: white;
   .family {
-    // max-width: 100%;
+    width: 100%;
   }
 
   .insurance {
@@ -29,7 +29,7 @@ header {
     margin-top: 40px;
   }
   p {
-    padding: 20px;
+    padding: 20px 0;
   }
 
   .btn {
@@ -119,6 +119,7 @@ header {
       display: flex;
       justify-content: space-between;
       margin-right: 100px;
+      color: hsl(216, 30%, 68%);
     }
   }
  .humanise{
@@ -126,17 +127,18 @@ header {
      flex-direction: row-reverse;
      align-items: center;
      font-size: 28px;
-     padding-left: 30px;
+    //  padding-left: 30px;
      
-    p{
-       padding: 30px 50px;
-    }
-    // .family{
-    //   width: 89%;
+    // p{
+    //    padding: 30px 50px;
     // }
+    .family{
+     transform: translate(-20%,30%);
+   }
      .insurance{
          padding: 0 60px;
          text-align: left;
+         
      }
  }
 
@@ -174,12 +176,14 @@ header {
    .log{
      display: flex;
      justify-content: space-between;
+     align-items: center;
      padding: 10px 100px;
      border-bottom: hsla(256, 52%, 94%, 0.678) solid;
    }
    
    .logo1{
      padding-left: 50px;
+     margin: 0px;
    }
    .grid{
      display: grid;

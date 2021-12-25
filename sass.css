@@ -158,10 +158,6 @@ header .flex {
             align-items: center;
     font-size: 28px;
   }
-  .humanise .family {
-    -webkit-transform: translate(-20%, 30%);
-            transform: translate(-20%, 30%);
-  }
   .humanise .insurance {
     padding: 0 60px;
     text-align: left;
